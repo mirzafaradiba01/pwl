@@ -3,7 +3,10 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HobbyController;
+use App\Http\Controllers\HobiController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\KendaraanController;
 use App\Http\Controllers\KuliahController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\PagesController;
@@ -94,3 +97,10 @@ Route::get('/prak2', function (){
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/profile', [ProfileController::class, 'index']);
 Route::get('/kuliah', [KuliahController::class, 'index']);
+
+
+//PRAKTIKUM PERTEMUAN 4
+Route::get('/kendaraan', [KendaraanController::class, 'index']);
+
+//TUGAS
+Route::get('/hobi', [HobiController::class, 'index']);
