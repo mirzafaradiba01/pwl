@@ -6,6 +6,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HobbyController;
 use App\Http\Controllers\HobiController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\KeluargaController;
 use App\Http\Controllers\KendaraanController;
 use App\Http\Controllers\KuliahController;
 use App\Http\Controllers\PageController;
@@ -104,3 +105,4 @@ Route::get('/kendaraan', [KendaraanController::class, 'index']);
 
 //TUGAS
 Route::get('/hobi', [HobiController::class, 'index']);
+Route::get('/keluarga', [KeluargaController::class, 'index']);
