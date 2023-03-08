@@ -44,6 +44,18 @@
               <p>Pengalaman Kuliah</p>
             </a>
         </li>
+        <li class="nav-item">
+          <a href="{{ url('/hobi') }}" class="nav-link">
+            <i class="nav-icon fas fa-book"></i>
+            <p>Hobi</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('/keluarga') }}" class="nav-link">
+            <i class="nav-icon fas fa-book"></i>
+            <p>Keluarga</p>
+          </a>
+        </li>
       </ul>
     </nav>
     <!-- /.sidebar-menu -->

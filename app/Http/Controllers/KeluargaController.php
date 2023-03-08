@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Keluarga;
+use App\Models\KeluargaModel;
 use Illuminate\Http\Request;
 
 class KeluargaController extends Controller
@@ -14,7 +15,9 @@ class KeluargaController extends Controller
      */
     public function index()
     {
-        //
+        $keluarga = KeluargaModel::all();
+        return view('keluarga')
+            ->with('keluarga', $keluarga);
     }
 
     /**
@@ -44,7 +47,7 @@ class KeluargaController extends Controller
      * @param  \App\Models\Keluarga  $keluarga
      * @return \Illuminate\Http\Response
      */
-    public function show(Keluarga $keluarga)
+    public function show(KeluargaModel $keluarga)
     {
         //
     }
@@ -55,7 +58,7 @@ class KeluargaController extends Controller
      * @param  \App\Models\Keluarga  $keluarga
      * @return \Illuminate\Http\Response
      */
-    public function edit(Keluarga $keluarga)
+    public function edit(KeluargaModel $keluarga)
     {
         //
     }
@@ -67,7 +70,7 @@ class KeluargaController extends Controller
      * @param  \App\Models\Keluarga  $keluarga
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Keluarga $keluarga)
+    public function update(Request $request, KeluargaModel $keluarga)
     {
         //
     }
@@ -78,7 +81,7 @@ class KeluargaController extends Controller
      * @param  \App\Models\Keluarga  $keluarga
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Keluarga $keluarga)
+    public function destroy(KeluargaModel $keluarga)
     {
         //
     }
