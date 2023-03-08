@@ -13,6 +13,7 @@ class KeluargaSeeder extends Seeder
      *
      * @return void
      */
+    
     public function run()
     {
         DB::table('keluarga')->insert([

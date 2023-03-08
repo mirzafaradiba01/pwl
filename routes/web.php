@@ -106,4 +106,4 @@ Route::get('/kendaraan', [KendaraanController::class, 'index']);
 
 //TUGAS
 Route::get('/hobi', [HobiController::class, 'index']);
-Route::get('/keluarga', [KeluargaController::class, 'index']);
+Route::get('/keluarga', [KeluargaController::class, 'index']); 

@@ -29,7 +29,7 @@
                     <th>Pekerjaan</th>
                 </tr>
       
-                @foreach ($keluarga as $no => $k)
+                @foreach ($keluarga as $no => $k) 
                 <tr>
                   <td>{{$k ->no}}</td>
                   <td>{{$k->nama}}</td>
