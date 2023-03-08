@@ -22,9 +22,10 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call([
-            // KendaraanSeeder::class
-            // HobiSeeder::class
-            KeluargaSeeder::class
+            // KendaraanSeeder::class,
+            // HobiSeeder::class,
+            // KeluargaSeeder::class,
+            MatakuliahSeeder::class
         ]);
     }
 }
