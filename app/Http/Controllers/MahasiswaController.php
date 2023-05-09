@@ -61,21 +61,6 @@ class MahasiswaController extends Controller
         return redirect('mahasiswa')
             ->with('success', 'Mahasiswa Berhasil Ditambahkan');
 
-        // $mhs = new MahasiswaModel();
-        // $mhs -> nim = $request->get('Nim');        
-        // $mhs -> nama = $request->get('Nama');        
-        // $mhs -> jk = $request->get('JK');        
-        // $mhs -> tempat_lahir = $request->get('Tempat Lahir');        
-        // $mhs -> tanggal_lahir = $request->get('Tanggal Lahir');        
-        // $mhs -> alamat = $request->get('Alamat');        
-        // $mhs -> hp = $request->get('HP');     
-        
-        // $kelas = new KelasModel();
-        // $kelas->id = $request->get('Kelas');
-
-        // $mhs->kelas()->associate($kelas);
-        // $mhs->save();
-
     }
 
     /**
