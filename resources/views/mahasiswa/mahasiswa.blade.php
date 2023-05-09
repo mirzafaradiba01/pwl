@@ -25,7 +25,8 @@
                     <th>No</th>
                     <th>NIM</th>
                     <th>Nama</th>
-                    <th>Jk</th>
+                    <th>Kelas</th>
+                    <th>JK</th>
                     <th>Tempat Lahir</th>
                     <th>Tanggal Lahir</th>
                     <th>Alamat</th>
@@ -40,6 +41,7 @@
                   <td>{{++$i}}</td>
                   <td>{{$m->nim}}</td>
                   <td>{{$m->nama}}</td>
+                  <td>{{$m->kelas->nama_kelas}}</td>
                   <td>{{$m->jk}}</td>
                   <td>{{$m->tempat_lahir}}</td>
                   <td>{{$m->tanggal_lahir}}</td>
@@ -47,6 +49,8 @@
                   <td>{{$m->hp}}</td>
                   <td>
                      {{-- Bikin simbol edit dan delete --}}
+                     <a href="{{ url('/mahasiswa/'.$m->id )}}" class="btn btn-sm btn-primary">show</a>
+
                      <a href="{{ url('/mahasiswa/'.$m->id.'/edit')}}" class="btn btn-sm btn-warning">edit</a>
 
                      <form class="inline" method="POST" action="{{ url('/mahasiswa/'.$m->id) }}">
