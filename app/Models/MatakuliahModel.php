@@ -11,4 +11,12 @@ class MatakuliahModel extends Model
     protected $table = 'matakuliah';
     protected $primaryKey ='kode';
     protected $keyType = 'string';
+    protected $fillable = [
+        'kode',
+        'nama_mk',
+        'dosen',
+        'sks',
+        'jam' ,
+        'nilai' 
+    ];
 }
