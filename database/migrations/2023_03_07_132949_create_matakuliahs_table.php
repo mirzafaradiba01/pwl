@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('matakuliah', function (Blueprint $table) {
             $table->string('kode', 10)->primary();
             $table->string('nama_mk', 100)->nullable();
+            $table->integer('semester')->nullable();
             $table->string('dosen', 100)->nullable();
             $table->smallInteger('sks')->nullable();
             $table->smallInteger('jam')->nullable();

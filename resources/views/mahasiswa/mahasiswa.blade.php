@@ -51,6 +51,8 @@
                      {{-- Bikin simbol edit dan delete --}}
                      <a href="{{ url('/mahasiswa/'.$m->id )}}" class="btn btn-sm btn-primary">show</a>
 
+                     <a href="{{ url('/mahasiswa/'.$m->id.'/show' )}}" class="btn btn-sm btn-success">nilai</a>
+
                      <a href="{{ url('/mahasiswa/'.$m->id.'/edit')}}" class="btn btn-sm btn-warning">edit</a>
 
                      <form class="inline" method="POST" action="{{ url('/mahasiswa/'.$m->id) }}">
