@@ -74,6 +74,7 @@ Route::middleware(['auth'])->group(function(){
     
     //Praktikum 7
         Route::resource('/mahasiswa', MahasiswaController::class)->parameter('mahasiswa', 'id');
+        Route::get('/mahasiswa/{id}/show',[MahasiswaController::class, 'nilai']);   
 });
 
 

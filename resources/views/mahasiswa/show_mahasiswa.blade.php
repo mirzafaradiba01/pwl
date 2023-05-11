@@ -11,6 +11,7 @@
     <table class="table table-striped">
         <thead>
         <tr>
+            <th>No</th>
             <th>Kode</th>
             <th>MataKuliah</th>
             <th>Semester</th>
@@ -22,8 +23,9 @@
         </thead>
         <tbody>
         @if($khs->count() > 0)
-            @foreach($khs as $row)
+            @foreach($khs as $i => $row)
                 <tr>
+                  <td>{{++$i}}</td>
                     <td>{{ $row->matkul->kode }}</td>
                     <td>{{ $row->matkul->nama_mk }}</td>
                     <td>{{ $row->matkul->semester }}</td>
@@ -35,7 +37,7 @@
             @endforeach
         @else
             <tr>
-                <td colspan="6" class="text-center">Data tidak ada</td>
+                <td colspan="8" class="text-center">Data tidak ada</td>
             </tr>
         @endif
 
