@@ -78,6 +78,7 @@ Route::middleware(['auth'])->group(function(){
     
     //Praktikum Pertemuan 10
         Route::resource('articles', ArticleController::class);
+        Route::get('articlecetak', [ArticleController::class, 'cetak_pdf']);
 });
 
 

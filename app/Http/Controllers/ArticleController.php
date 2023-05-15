@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use Illuminate\Http\Request;
+use PDF;
 
 class ArticleController extends Controller
 {
@@ -15,6 +16,12 @@ class ArticleController extends Controller
     public function index()
     {
         //
+    }
+
+    public function cetak_pdf(){
+        $article = Article::all();
+        $pdf = PDF::loadview('article.article_pdf', ['article' => $article]);
+        return $pdf->stream();
     }
 
     /**
