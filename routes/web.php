@@ -73,9 +73,9 @@ Route::middleware(['auth'])->group(function(){
         Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     
     //Praktikum 7
-        Route::resource('/mahasiswa', MahasiswaController::class)->parameter('mahasiswa', 'id');
         Route::get('/mahasiswa/{id}/show',[MahasiswaController::class, 'nilai']);   
-    
+        Route::get('/mahasiswa/cetak_pdf/{id}', [MahasiswaController::class, 'cetak_pdf']);
+        Route::resource('/mahasiswa', MahasiswaController::class)->parameter('mahasiswa', 'id');    
     //Praktikum Pertemuan 10
         Route::resource('articles', ArticleController::class);
         Route::get('articlecetak', [ArticleController::class, 'cetak_pdf']);

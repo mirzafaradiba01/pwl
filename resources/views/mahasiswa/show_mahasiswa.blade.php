@@ -43,4 +43,5 @@
 
         </tbody>
     </table>
+    <a href="{{ url('/mahasiswa/cetak_pdf/' . $data->id) }}" class="btn btn-primary">Cetak KRS</a>
 @endsection
