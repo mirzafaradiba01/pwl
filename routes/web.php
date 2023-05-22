@@ -74,11 +74,12 @@ Route::middleware(['auth'])->group(function(){
     
     //Praktikum 7
         Route::get('/mahasiswa/{id}/show',[MahasiswaController::class, 'nilai']);   
-        Route::get('/mahasiswa/cetak_pdf/{id}', [MahasiswaController::class, 'cetak_pdf']);
+        
         Route::resource('/mahasiswa', MahasiswaController::class)->parameter('mahasiswa', 'id');    
     //Praktikum Pertemuan 10
         Route::resource('articles', ArticleController::class);
         Route::get('articlecetak', [ArticleController::class, 'cetak_pdf']);
+        Route::get('/mahasiswa/cetak_pdf/{id}', [MahasiswaController::class, 'cetak_pdf']);
 });
 
 

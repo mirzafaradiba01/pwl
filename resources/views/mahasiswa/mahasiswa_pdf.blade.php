@@ -21,7 +21,8 @@
 </head>
 <body>
 <div class="text-center">
-    <h3>Laporan KRS</h3>
+    <h4 class="text-center">JURUSAN TEKNOLOGI INFORMASI - POLITEKNIK NEGERI MALANG</h4>
+    <h3 class="text-center">KARTU RIWAYAT STUDI (KRS)</h3>
 </div>
 <ul>
     <li><b>Nim : </b>{{ $mahasiswa->nim }}</li>
