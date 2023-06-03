@@ -35,14 +35,14 @@
                       <span class="error invalid-feedback">{{ $message }} </span>
                     @enderror
                   </div>
-                  <div class="form-group">
+                  {{-- <div class="form-group">
                     <label>Foto</label>
                     <input class="form-control" name="foto" value="" required="required" type="file">
                     @error('foto')
                     <small class="text-danger">{{ $message }}</small>
                     @enderror
-                  </div>
-                  <div class="form-group">
+                  </div> --}}
+                  {{-- <div class="form-group">
                     <label for="Kelas">Kelas</label>
                     <select name="kelas_id" class="form-control @error('kelas_id') is-invalid @enderror">
                       @foreach($kelas as $kls)
@@ -52,7 +52,7 @@
                     @error('kelas_id')
                       <span class="error invalid-feedback">{{ $message }} </span>
                     @enderror
-                  </div>
+                  </div> --}}
                   <div class="form-group">
                     <label>JK</label>
                     <input class="form-control @error('jk') is-invalid @enderror" value="{{ isset($mhs)? $mhs->jk:old('jk') }}" name="jk" type="text"/>
